@@ -1,0 +1,13 @@
+PODS:
+  - CocoaAsyncSocket (7.3.5)
+  - DNSKit (0.0.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.3)
+  - DNSKit (= 0.0.1)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
+  DNSKit: bc021f22cf2e479bbef89fdb647aff1e4bd97eef
+
+COCOAPODS: 0.33.1

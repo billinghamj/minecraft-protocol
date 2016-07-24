@@ -1,0 +1,1 @@
+../../DNSKit/DNSKit/DNSQuery.h

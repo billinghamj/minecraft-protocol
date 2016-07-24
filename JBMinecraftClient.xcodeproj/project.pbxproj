@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0C6D5A1933A8E3008FCB15 /* Client.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D591933A8E3008FCB15 /* Client.mm */; };
+		0C0C6D60193400B9008FCB15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBF8FD192954DF001E4A17 /* Foundation.framework */; };
+		0C0C6D62193400B9008FCB15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0C6D61193400B9008FCB15 /* CoreGraphics.framework */; };
+		0C0C6D63193400B9008FCB15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBF90E192954DF001E4A17 /* UIKit.framework */; };
+		0C0C6D69193400B9008FCB15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0C6D67193400B9008FCB15 /* InfoPlist.strings */; };
+		0C0C6D6B193400B9008FCB15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D6A193400B9008FCB15 /* main.m */; };
+		0C0C6D6F193400B9008FCB15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D6E193400B9008FCB15 /* AppDelegate.m */; };
+		0C0C6D72193400B9008FCB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0C6D70193400B9008FCB15 /* Main.storyboard */; };
+		0C0C6D75193400B9008FCB15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D74193400B9008FCB15 /* ViewController.m */; };
+		0C0C6D77193400B9008FCB15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0C6D76193400B9008FCB15 /* Images.xcassets */; };
+		0C0C6D90193401EE008FCB15 /* libJBMinecraftClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBF8FA192954DF001E4A17 /* libJBMinecraftClient.a */; };
+		0C0C6D9319340771008FCB15 /* NSDataPacketWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D9219340771008FCB15 /* NSDataPacketWriter.mm */; };
+		0C0C6D9719340EA7008FCB15 /* StringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C6D9519340EA7008FCB15 /* StringUtils.cpp */; };
+		0C0F7027192DE251006882A0 /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F7025192DE251006882A0 /* Client.cpp */; };
+		0CA2E8771955B2820049EBB9 /* NSDataPacketReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2E8761955B2820049EBB9 /* NSDataPacketReader.mm */; };
+		0CDBF8FE192954DF001E4A17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBF8FD192954DF001E4A17 /* Foundation.framework */; };
+		0CDBF903192954DF001E4A17 /* JBMinecraftClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0CDBF902192954DF001E4A17 /* JBMinecraftClient.h */; };
+		0CDBF92B19295C27001E4A17 /* HandshakePacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF92919295C27001E4A17 /* HandshakePacket.cpp */; };
+		0CDBF92E19296050001E4A17 /* Packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF92C19296050001E4A17 /* Packet.cpp */; };
+		0CDBF93719298AC2001E4A17 /* StatusPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF93519298AC2001E4A17 /* StatusPacket.cpp */; };
+		0CDBF93A19298BD3001E4A17 /* PingPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF93819298BD3001E4A17 /* PingPacket.cpp */; };
+		0CDBF93F19298E4C001E4A17 /* PingPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF93B19298E4C001E4A17 /* PingPacket.cpp */; };
+		0CDBF94019298E4C001E4A17 /* StatusPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF93D19298E4C001E4A17 /* StatusPacket.cpp */; };
+		0CDBF943192A0910001E4A17 /* PacketReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF941192A0910001E4A17 /* PacketReader.cpp */; };
+		0CDBF946192A091C001E4A17 /* PacketWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBF944192A091C001E4A17 /* PacketWriter.cpp */; };
+		5AA1CBAB878041D285E1AE17 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AC2F67F39D44EF8A7431CF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0CDBF8F8192954DF001E4A17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				0CDBF903192954DF001E4A17 /* JBMinecraftClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C0C6D581933A8E3008FCB15 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		0C0C6D591933A8E3008FCB15 /* Client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Client.mm; sourceTree = "<group>"; };
+		0C0C6D5F193400B9008FCB15 /* JBMinecraftClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBMinecraftClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0C6D61193400B9008FCB15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C0C6D66193400B9008FCB15 /* JBMinecraftClientExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JBMinecraftClientExample-Info.plist"; sourceTree = "<group>"; };
+		0C0C6D68193400B9008FCB15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C0C6D6A193400B9008FCB15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C0C6D6C193400B9008FCB15 /* JBMinecraftClientExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JBMinecraftClientExample-Prefix.pch"; sourceTree = "<group>"; };
+		0C0C6D6D193400B9008FCB15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C0C6D6E193400B9008FCB15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C0C6D71193400B9008FCB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C0C6D73193400B9008FCB15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C0C6D74193400B9008FCB15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C0C6D76193400B9008FCB15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C0C6D9119340771008FCB15 /* NSDataPacketWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataPacketWriter.h; sourceTree = "<group>"; };
+		0C0C6D9219340771008FCB15 /* NSDataPacketWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSDataPacketWriter.mm; sourceTree = "<group>"; };
+		0C0C6D9419340BD2008FCB15 /* Endianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Endianness.h; sourceTree = "<group>"; };
+		0C0C6D9519340EA7008FCB15 /* StringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtils.cpp; sourceTree = "<group>"; };
+		0C0C6D9619340EA7008FCB15 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		0C0F7025192DE251006882A0 /* Client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
+		0C0F7026192DE251006882A0 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		0CA2E8751955B2820049EBB9 /* NSDataPacketReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataPacketReader.h; sourceTree = "<group>"; };
+		0CA2E8761955B2820049EBB9 /* NSDataPacketReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSDataPacketReader.mm; sourceTree = "<group>"; };
+		0CDBF8FA192954DF001E4A17 /* libJBMinecraftClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJBMinecraftClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDBF8FD192954DF001E4A17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0CDBF902192954DF001E4A17 /* JBMinecraftClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMinecraftClient.h; sourceTree = "<group>"; };
+		0CDBF90B192954DF001E4A17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0CDBF90E192954DF001E4A17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0CDBF92919295C27001E4A17 /* HandshakePacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandshakePacket.cpp; sourceTree = "<group>"; };
+		0CDBF92A19295C27001E4A17 /* HandshakePacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandshakePacket.h; sourceTree = "<group>"; };
+		0CDBF92C19296050001E4A17 /* Packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Packet.cpp; sourceTree = "<group>"; };
+		0CDBF92D19296050001E4A17 /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packet.h; sourceTree = "<group>"; };
+		0CDBF9301929881D001E4A17 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		0CDBF93219298912001E4A17 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		0CDBF93519298AC2001E4A17 /* StatusPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatusPacket.cpp; sourceTree = "<group>"; };
+		0CDBF93619298AC2001E4A17 /* StatusPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusPacket.h; sourceTree = "<group>"; };
+		0CDBF93819298BD3001E4A17 /* PingPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PingPacket.cpp; sourceTree = "<group>"; };
+		0CDBF93919298BD3001E4A17 /* PingPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingPacket.h; sourceTree = "<group>"; };
+		0CDBF93B19298E4C001E4A17 /* PingPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PingPacket.cpp; sourceTree = "<group>"; };
+		0CDBF93C19298E4C001E4A17 /* PingPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingPacket.h; sourceTree = "<group>"; };
+		0CDBF93D19298E4C001E4A17 /* StatusPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatusPacket.cpp; sourceTree = "<group>"; };
+		0CDBF93E19298E4C001E4A17 /* StatusPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusPacket.h; sourceTree = "<group>"; };
+		0CDBF941192A0910001E4A17 /* PacketReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketReader.cpp; sourceTree = "<group>"; };
+		0CDBF942192A0910001E4A17 /* PacketReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketReader.h; sourceTree = "<group>"; };
+		0CDBF944192A091C001E4A17 /* PacketWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketWriter.cpp; sourceTree = "<group>"; };
+		0CDBF945192A091C001E4A17 /* PacketWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketWriter.h; sourceTree = "<group>"; };
+		30900E57262741B895161E0D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		51AC2F67F39D44EF8A7431CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0C6D5C193400B9008FCB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0C6D90193401EE008FCB15 /* libJBMinecraftClient.a in Frameworks */,
+				0C0C6D62193400B9008FCB15 /* CoreGraphics.framework in Frameworks */,
+				0C0C6D63193400B9008FCB15 /* UIKit.framework in Frameworks */,
+				0C0C6D60193400B9008FCB15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDBF8F7192954DF001E4A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDBF8FE192954DF001E4A17 /* Foundation.framework in Frameworks */,
+				5AA1CBAB878041D285E1AE17 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0C6D64193400B9008FCB15 /* JBMinecraftClientExample */ = {
+			isa = PBXGroup;
+			children = (
+				0C0C6D6D193400B9008FCB15 /* AppDelegate.h */,
+				0C0C6D6E193400B9008FCB15 /* AppDelegate.m */,
+				0C0C6D70193400B9008FCB15 /* Main.storyboard */,
+				0C0C6D73193400B9008FCB15 /* ViewController.h */,
+				0C0C6D74193400B9008FCB15 /* ViewController.m */,
+				0C0C6D76193400B9008FCB15 /* Images.xcassets */,
+				0C0C6D65193400B9008FCB15 /* Supporting Files */,
+			);
+			path = JBMinecraftClientExample;
+			sourceTree = "<group>";
+		};
+		0C0C6D65193400B9008FCB15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C0C6D66193400B9008FCB15 /* JBMinecraftClientExample-Info.plist */,
+				0C0C6D67193400B9008FCB15 /* InfoPlist.strings */,
+				0C0C6D6A193400B9008FCB15 /* main.m */,
+				0C0C6D6C193400B9008FCB15 /* JBMinecraftClientExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C0F7024192DE1E4006882A0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0C0F7025192DE251006882A0 /* Client.cpp */,
+				0C0F7026192DE251006882A0 /* Client.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CDBF8F1192954DF001E4A17 = {
+			isa = PBXGroup;
+			children = (
+				0CDBF8FF192954DF001E4A17 /* JBMinecraftClient */,
+				0C0C6D64193400B9008FCB15 /* JBMinecraftClientExample */,
+				0CDBF8FC192954DF001E4A17 /* Frameworks */,
+				0CDBF8FB192954DF001E4A17 /* Products */,
+				30900E57262741B895161E0D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0CDBF8FB192954DF001E4A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF8FA192954DF001E4A17 /* libJBMinecraftClient.a */,
+				0C0C6D5F193400B9008FCB15 /* JBMinecraftClientExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CDBF8FC192954DF001E4A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF8FD192954DF001E4A17 /* Foundation.framework */,
+				0CDBF90B192954DF001E4A17 /* XCTest.framework */,
+				0CDBF90E192954DF001E4A17 /* UIKit.framework */,
+				51AC2F67F39D44EF8A7431CF /* libPods.a */,
+				0C0C6D61193400B9008FCB15 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CDBF8FF192954DF001E4A17 /* JBMinecraftClient */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF902192954DF001E4A17 /* JBMinecraftClient.h */,
+				0C0C6D9419340BD2008FCB15 /* Endianness.h */,
+				0C0C6D9519340EA7008FCB15 /* StringUtils.cpp */,
+				0C0C6D9619340EA7008FCB15 /* StringUtils.h */,
+				0C0C6D581933A8E3008FCB15 /* Client.h */,
+				0C0C6D591933A8E3008FCB15 /* Client.mm */,
+				0CDBF9301929881D001E4A17 /* State.h */,
+				0CDBF93219298912001E4A17 /* Version.h */,
+				0CDBF941192A0910001E4A17 /* PacketReader.cpp */,
+				0CDBF942192A0910001E4A17 /* PacketReader.h */,
+				0CDBF944192A091C001E4A17 /* PacketWriter.cpp */,
+				0CDBF945192A091C001E4A17 /* PacketWriter.h */,
+				0C0C6D9119340771008FCB15 /* NSDataPacketWriter.h */,
+				0C0C6D9219340771008FCB15 /* NSDataPacketWriter.mm */,
+				0CA2E8751955B2820049EBB9 /* NSDataPacketReader.h */,
+				0CA2E8761955B2820049EBB9 /* NSDataPacketReader.mm */,
+				0C0F7024192DE1E4006882A0 /* Network */,
+				0CDBF92319295522001E4A17 /* Packets */,
+			);
+			path = JBMinecraftClient;
+			sourceTree = "<group>";
+		};
+		0CDBF92319295522001E4A17 /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF92C19296050001E4A17 /* Packet.cpp */,
+				0CDBF92D19296050001E4A17 /* Packet.h */,
+				0CDBF92419295542001E4A17 /* Handshaking */,
+				0CDBF93319298A22001E4A17 /* StatusSB */,
+				0CDBF93419298A80001E4A17 /* StatusCB */,
+			);
+			path = Packets;
+			sourceTree = "<group>";
+		};
+		0CDBF92419295542001E4A17 /* Handshaking */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF92919295C27001E4A17 /* HandshakePacket.cpp */,
+				0CDBF92A19295C27001E4A17 /* HandshakePacket.h */,
+			);
+			path = Handshaking;
+			sourceTree = "<group>";
+		};
+		0CDBF93319298A22001E4A17 /* StatusSB */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF93519298AC2001E4A17 /* StatusPacket.cpp */,
+				0CDBF93619298AC2001E4A17 /* StatusPacket.h */,
+				0CDBF93819298BD3001E4A17 /* PingPacket.cpp */,
+				0CDBF93919298BD3001E4A17 /* PingPacket.h */,
+			);
+			path = StatusSB;
+			sourceTree = "<group>";
+		};
+		0CDBF93419298A80001E4A17 /* StatusCB */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBF93D19298E4C001E4A17 /* StatusPacket.cpp */,
+				0CDBF93E19298E4C001E4A17 /* StatusPacket.h */,
+				0CDBF93B19298E4C001E4A17 /* PingPacket.cpp */,
+				0CDBF93C19298E4C001E4A17 /* PingPacket.h */,
+			);
+			path = StatusCB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C0C6D5E193400B9008FCB15 /* JBMinecraftClientExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0C6D8A193400B9008FCB15 /* Build configuration list for PBXNativeTarget "JBMinecraftClientExample" */;
+			buildPhases = (
+				0C0C6D5B193400B9008FCB15 /* Sources */,
+				0C0C6D5C193400B9008FCB15 /* Frameworks */,
+				0C0C6D5D193400B9008FCB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBMinecraftClientExample;
+			productName = JBMinecraftClientExample;
+			productReference = 0C0C6D5F193400B9008FCB15 /* JBMinecraftClientExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CDBF8F9192954DF001E4A17 /* JBMinecraftClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CDBF91D192954DF001E4A17 /* Build configuration list for PBXNativeTarget "JBMinecraftClient" */;
+			buildPhases = (
+				73327C95D1764349A7D6B3EC /* Check Pods Manifest.lock */,
+				0CDBF8F6192954DF001E4A17 /* Sources */,
+				0CDBF8F7192954DF001E4A17 /* Frameworks */,
+				0CDBF8F8192954DF001E4A17 /* CopyFiles */,
+				83676D519F20405897994340 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBMinecraftClient;
+			productName = JBMinecraftClient;
+			productReference = 0CDBF8FA192954DF001E4A17 /* libJBMinecraftClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CDBF8F2192954DF001E4A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "James Billingham";
+			};
+			buildConfigurationList = 0CDBF8F5192954DF001E4A17 /* Build configuration list for PBXProject "JBMinecraftClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CDBF8F1192954DF001E4A17;
+			productRefGroup = 0CDBF8FB192954DF001E4A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CDBF8F9192954DF001E4A17 /* JBMinecraftClient */,
+				0C0C6D5E193400B9008FCB15 /* JBMinecraftClientExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0C6D5D193400B9008FCB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0C6D77193400B9008FCB15 /* Images.xcassets in Resources */,
+				0C0C6D69193400B9008FCB15 /* InfoPlist.strings in Resources */,
+				0C0C6D72193400B9008FCB15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73327C95D1764349A7D6B3EC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83676D519F20405897994340 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0C6D5B193400B9008FCB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0C6D75193400B9008FCB15 /* ViewController.m in Sources */,
+				0C0C6D6F193400B9008FCB15 /* AppDelegate.m in Sources */,
+				0C0C6D6B193400B9008FCB15 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CDBF8F6192954DF001E4A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0C6D9719340EA7008FCB15 /* StringUtils.cpp in Sources */,
+				0CDBF93719298AC2001E4A17 /* StatusPacket.cpp in Sources */,
+				0C0C6D9319340771008FCB15 /* NSDataPacketWriter.mm in Sources */,
+				0CDBF93F19298E4C001E4A17 /* PingPacket.cpp in Sources */,
+				0CDBF93A19298BD3001E4A17 /* PingPacket.cpp in Sources */,
+				0CDBF94019298E4C001E4A17 /* StatusPacket.cpp in Sources */,
+				0C0C6D5A1933A8E3008FCB15 /* Client.mm in Sources */,
+				0CA2E8771955B2820049EBB9 /* NSDataPacketReader.mm in Sources */,
+				0CDBF943192A0910001E4A17 /* PacketReader.cpp in Sources */,
+				0CDBF92B19295C27001E4A17 /* HandshakePacket.cpp in Sources */,
+				0CDBF946192A091C001E4A17 /* PacketWriter.cpp in Sources */,
+				0CDBF92E19296050001E4A17 /* Packet.cpp in Sources */,
+				0C0F7027192DE251006882A0 /* Client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C0C6D67193400B9008FCB15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0C6D68193400B9008FCB15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C0C6D70193400B9008FCB15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0C6D71193400B9008FCB15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C0C6D8B193400B9008FCB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30900E57262741B895161E0D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBMinecraftClientExample/JBMinecraftClientExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					.,
+				);
+				INFOPLIST_FILE = "JBMinecraftClientExample/JBMinecraftClientExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"/usr/lib/libstdc++.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C0C6D8C193400B9008FCB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30900E57262741B895161E0D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JBMinecraftClientExample/JBMinecraftClientExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					.,
+				);
+				INFOPLIST_FILE = "JBMinecraftClientExample/JBMinecraftClientExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"/usr/lib/libstdc++.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0CDBF91B192954DF001E4A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+			};
+			name = Debug;
+		};
+		0CDBF91C192954DF001E4A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+			};
+			name = Release;
+		};
+		0CDBF91E192954DF001E4A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30900E57262741B895161E0D /* Pods.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0CDBF91F192954DF001E4A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30900E57262741B895161E0D /* Pods.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0C6D8A193400B9008FCB15 /* Build configuration list for PBXNativeTarget "JBMinecraftClientExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0C6D8B193400B9008FCB15 /* Debug */,
+				0C0C6D8C193400B9008FCB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDBF8F5192954DF001E4A17 /* Build configuration list for PBXProject "JBMinecraftClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDBF91B192954DF001E4A17 /* Debug */,
+				0CDBF91C192954DF001E4A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDBF91D192954DF001E4A17 /* Build configuration list for PBXNativeTarget "JBMinecraftClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDBF91E192954DF001E4A17 /* Debug */,
+				0CDBF91F192954DF001E4A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CDBF8F2192954DF001E4A17 /* Project object */;
+}

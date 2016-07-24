@@ -1,0 +1,1 @@
+PODS_DNSKIT_OTHER_LDFLAGS = -framework CFNetwork
